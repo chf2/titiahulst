@@ -9,16 +9,20 @@
     <h1>Titia Hulst, PhD</h1>
     <h2>Art Historian</h2>
     <h3>Art markets and digital methods for art historians</h3>
-    <p>Contact: <span id="toggle">Click for E-mail</span></p>
+    <p>Contact: <span id="toggle-span" class="toggle">click to reveal e-mail</span></p>
+    <hr id="line">
   </div>
+  <div id="bg"></div>
 </body>
 </html>
 
 <script type="text/javascript">
-  var span = document.getElementById('toggle');
+  var span = document.getElementById('toggle-span');
   var base = 'titiahulst';
   var ext = 'gmail';
   span.onclick = function (e) {
-    e.currentTarget.innerHtml = base + "@" + ext + ".com";
+    e.currentTarget.innerHTML = base + "@" + ext + ".com";
+    var classes = e.currentTarget.classList;
+    classes.remove('toggle');
   };
 </script>
