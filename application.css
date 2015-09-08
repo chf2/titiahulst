@@ -23,18 +23,19 @@ body {
   background-color: #F2F2F2;
 }
 
-h1 {
-  margin-bottom: 22px;
-}
-
 h2 {
-  font-weight: 500;
-  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: -10px;
 }
 
 h3 {
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+#content {
+  margin-top: 40px;
 }
 
 .toggle {
